@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="icon" href="imgs/pngdelta.png">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.min.js" integrity="sha512-f0VlzJbcEB6KiW8ZVtL+5HWPDyW1+nJEjguZ5IVnSQkvZbwBt2RfCBY0CBO1PsMAqxxrG4Di6TfsCPP3ZRwKpA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top " style="background: #4D5B39;">
+        <div class="container">
+            <ul class="navbar-nav fluid navbar-light">
+                <li class="nav-item">
+                    <a class="nav-link img-circle" href="index.html"><img src="imgs/LOGO DELTA.png" alt="Logo" width="80px" height="30px"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" style="color: white;"><i class="fas fa-home"></i> Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html" style="color: white;"><i class="fas fa-users"></i> Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="productos.html" style="color: white;"><i class="fas fa-store" ></i> Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="carrito.html" style="color: white;"><i class="fas fa-shopping-cart" ></i> Carrito(
+                        <!--muestra cuantos elementos se selecciono -->
+                        <?php
+                        print_r(empty($_SESSION['carrito'])) ? 0 : count($_SESSION['carrito']);
+                        ?>)
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html" style="color: white;"><i class="fas fa-user"></i> Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="jumbotron jumbotron text-justify " >
+        <h1 class="display-4 text-center text-uppercase" >Quienes Somos</h1 class>
+        <p class="lead text-center">Venta de Equipos Tácticos Durables</p>
+        <hr class="my-2">
+        <div class=" card container bg-secondary text-black text-center" >
+            <p class="display-4 text-uppercase" >Nuestra Misión</p>
+                <p class="lead">Ofrecer productos de la más alta calidad, utilizando la mejora continua de procesos como herramienta de evolución constante para bienestar de nuestros clientes que siempre confían en los implementos que usan tanto en el servicio o fuera de él; Todo ello respaldado en una cultura de excelencia operativa, prontitud de respuesta, así como un alto nivel de atención a nuestros clientes; por medio de personal capacitado, motivado y comprometido con la empresa que nos permita tener un crecimiento con rentabilidad sostenida.</p>
+        </div>
+        <div class=" card container bg-secondary text-black my-5 text-center" >
+            <p class="display-4 text-uppercase" >Nuestra Visión</p>
+                <p class="lead">Ser una empresa líder y un referente en el mercado nacional e internacional, así como la mejora constante de nuestros productos acorde a los avances tecnológicos, y así ser reconocidos como una de las primeras opciones entre productos tácticos de marcas establecidas a nivel mundial para seguir teniendo tasas de crecimiento, rentabilidad cada vez más elevadas y sostenibilidad constante.</p>
+        </div>
+    </div>
+
+     <!-- Footer -->
+     <footer class="text-center text-lg-start bg-dark text-muted">
+        <!-- Section: Social media -->
+        <div class="container">
+          <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+              <span>Conectate con nosotros en las redes sociales:</span>
+            </div>
+            <!-- Left -->
+  
+            <!-- Right -->
+            <div>
+              <a href=" https://wa.link/zaz01c " target="_blank"><i class="bi-whatsapp fs-2 mx-4"></i></a>
+              <a href="https://www.facebook.com/urbansurvivorstore" target="_blank"><i class="bi-facebook fs-2 text-muted"></i></a>
+              <!-- Right -->
+          </section>
+          <!-- Section: Social media -->
+  
+          <!-- Section: Links  -->
+          <section class="">
+            <div class="container text-center text-md-start mt-5">
+              <!-- Grid row -->
+              <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                  <!-- Content -->
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    Delta Tactical Gear
+                  </h6>
+                  <p>
+                    es una empresa dedicada a la fabricación de equipos tácticos militares,
+                    de alta calidad con mano de obra calificada nacional orientado a satisfacer
+                    las necesidades de nuestros clientes, para afrontar las diferentes exigencias del mercado.
+                  </p>
+                  <div class="ratio ratio-16x9" style="height: 50px; display:flex;justify-content:center;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36322.83667174879!2d-77.02053831726802!3d-12.073050157411336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c42f793485e9%3A0xe630b31398d99081!2sUrbanizacion%20Sta.%20Elvira%2C%20Ate!5e0!3m2!1ses!2spe!4v1663905360793!5m2!1ses!2spe" width="600" height="100" style="border:0;margin-bottom:30px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+                <!-- Grid column -->
+  
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    Products
+                  </h6>
+                  <p>
+                    <a href="#!" class="text-reset">Chalecos Tacticos</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">Fundas</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">Accesorios</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">Mochilas</a>
+                  </p>
+                </div>
+                <!-- Grid column -->
+  
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    Navega
+                  </h6>
+                  <p>
+                    <a href="#!" class="text-reset">Productos</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">Nosotros</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">Carrito</a>
+                  </p>
+                  <!-- <p>
+                    <a href="#!" class="text-reset">Ayuda</a>
+                  </p> -->
+                </div>
+                <!-- Grid column -->
+  
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4">Contactanos</h6>
+                  <p><i class="fas fa-home me-3 text-secondary"></i> Ate Vitarte Lima Perú</p>
+                  <p>
+                    <i class="fas fa-envelope me-3 text-secondary"></i>
+                    ventas@deltatacticalgear.com.pe
+                  </p>
+                  <p><i class="fas fa-phone me-3 text-secondary"></i>+51 993000534</p>
+                  <p><i class="fas fa-clock me-3 text-secondary"></i>Lunes a viernes: 8:00 AM – 5:00 PM</p>
+                </div>
+                <!-- Grid column -->
+              </div>
+              <!-- Grid row -->
+            </div>
+          </section>
+          <!-- Section: Links  -->
+  
+          <!-- Copyright -->
+          <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+            © 2022 Copyright:
+          </div>
+          <!-- Copyright -->
+        </div>
+      </footer>
+      <!-- Footer -->
+</body>
+</html>
